@@ -5,13 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
 </head>
 <body>
-    
-    <div style="width: 100%;">
-        <h2 id="etiket"></h2>
+    <div class="container">
+        <div class="row">
+            <div class="col d-flex justify-content-center">
+                <h2 id="etiket" style="color: blueviolet;">Hello world!</h2>
+                
+            </div>
+        </div>
+        <div class="row">
+            <div class="col d-flex justify-content-center">
+                <button class="btn btn-danger" onclick="btnClick()">Click!</button>
+                <button class="btn btn-warning ml-2" onclick="this.innerHTML = 'Changed!'">Change</button>
+                <button class="btn btn-info ml-2" onclick="getInfo(this)">Send Info</button>
+                <button class="btn btn-primary ml-2" onclick="changeText()">Text change</button>
+                <button class="btn btn-dark ml-2" onmouseover="mouseover(this)" onmouseout="mouseout(this)" onclick="mouseclick(this)">Hover me!</button>
+            </div>
+        </div>
     </div>
 
-<script src="script.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <script src="events.js"></script>
 </body>
 </html>
