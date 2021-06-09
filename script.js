@@ -141,5 +141,3 @@ var person3 = new mainperson("Selman", "KOYAN", 21, "05551234567", array, "Türk
 
 //Son olarak ise bakalım 3. yöntemde de nesneyi doğruı bir şekilde oluşturabilmiş miyiz.
 console.log(person3.address.postcode);
-document.getElementById('etiket') = array[0];
-//alert("Toplam: " + (a+b+c));
