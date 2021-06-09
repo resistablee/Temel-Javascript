@@ -25,3 +25,17 @@ function mouseclick(element){
     element.classList.remove('btn-danger');
     element.classList.add("btn-success");
 }
+
+function frmControl() {
+    var frm = document.forms['form1'];
+
+    var mail = frm['inputEmail3'].value;
+    var pass = frm['inputPassword3'].value;
+
+    if (mail != "" && pass != "") {
+        return true;
+    }
+
+    alert("Mail ve şifre alanları boş geçilemez.")
+    return false;
+}
