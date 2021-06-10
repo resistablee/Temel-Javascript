@@ -3,7 +3,7 @@ function btnClick(){
 }
 
 function getInfo(element){
-    alert(element.innerHTML);
+    alert(element.textContent);
 }
 
 function changeText(){
